@@ -8,12 +8,12 @@ export const portfolioData = {
   experience: [
     {
       id: 1,
-      role: "Associate Engineer",
+      role: "Associate Software Engineer",
       company: "L&T Technology Services",
       location: "Mumbai & Mysuru, India",
       duration: "Sept 2024 - Sept 2025",
       type: "technical",
-      description: "Developed and maintained enterprise applications leveraging .NET and the MERN stack. Implemented scalable microservices architecture and collaborated with cross-functional teams to deliver high-quality software solutions."
+      description: "Led a 19-member development team to build 'Unified Dev Suite,' an enterprise SaaS/CaaS platform utilizing a single-spa micro-frontend architecture. Architected a scalable Node.js backend with 190+ reusable REST APIs routed through an APISIX gateway. Deployed on the Azure Marketplace and delivered custom integrations for high-profile clients including Nokia and Patient Point."
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export const portfolioData = {
       location: "Sheffield, UK",
       duration: "March 2026 - Present",
       type: "uk-work",
-      description: "Delivering high-quality customer service in a fast-paced environment, managing transactions, and maintaining operational excellence while pursuing postgraduate studies."
+      description: "Delivering high-quality customer service in a fast-paced environment, managing transactions, and maintaining operational excellence while pursuing full-time postgraduate studies."
     },
     {
       id: 3,
@@ -57,8 +57,8 @@ export const portfolioData = {
       id: 1,
       title: "AI-Powered Interview Integrity Platform",
       category: "AI & Data Science",
-      techStack: ["Next.js", "TensorFlow.js", "MediaPipe", "WebRTC", "Gemini 2.0 Flash"],
-      description: "MS Artificial Intelligence Final Year Project. Engineered an advanced online examination and proctoring system utilizing 29+ real-time AI algorithms. Integrated computer vision for gaze/gesture tracking, audio analysis for spoofing detection, and behavioral analytics to generate a live, weighted integrity score.",
+      techStack: ["Next.js 14", "React 19", "TypeScript", "MediaPipe", "TensorFlow.js", "WebRTC", "Gemini 2.0 Flash"],
+      description: "Engineered an advanced proctoring engine utilizing 29+ AI algorithms. Integrated MediaPipe and TensorFlow.js for real-time gaze, gesture, and object detection, alongside Silero VAD for audio spoofing analysis. Architected a behavioral analytics and integrity scoring system powered by Gemini 2.0 Flash and custom ML models.",
       githubUrl: "https://github.com/Gokulreddy141/SHU-AI-University-Project"
     },
     {
@@ -119,9 +119,9 @@ export const portfolioData = {
     }
   ],
   skills: {
-    frontend: ["React 19", "Next.js (App Router)", "Vite", "Tailwind CSS", "Micro-Frontends"],
-    backend: ["C# .NET 8 Web API", "Node.js", "FastAPI", "Express.js", "gRPC"],
-    cloudAndDevOps: ["AWS (S3, EC2, Lambda)", "Docker", "Kubernetes", "Vercel", "Render", "Apache Kafka", "RabbitMQ", "Redis"],
-    dataAndAI: ["Apache Spark (PySpark)", "Machine Learning (Keras/Scikit-Learn)", "Computer Vision (MediaPipe)", "LLMs (Gemini/Llama)", "SQL", "Tableau", "R"]
+    frontend: ["React 19", "Next.js", "Angular", "TypeScript", "Micro-Frontends (single-spa)", "Tailwind CSS", "Vite"],
+    backend: ["Node.js", "Express.js", "C# .NET 8 (ASP.NET Core)", "FastAPI", "gRPC", "RESTful APIs", "MongoDB", "PostgreSQL", "Redis"],
+    cloudAndDevOps: ["Docker", "Kubernetes", "AWS (EC2, S3, Lambda)", "Azure", "CI/CD (GitHub Actions)", "Apache Kafka", "RabbitMQ", "APISIX", "Vercel"],
+    dataAndAI: ["Python", "R", "PySpark", "Machine Learning (TensorFlow, Keras, Scikit-Learn)", "Computer Vision (MediaPipe, OpenCV)", "NLP", "LLMs (Gemini 2.0, Llama 3.1)", "Data Engineering (ETL Pipelines)", "SQL", "Pandas", "NumPy", "Data Visualization (Tableau)", "Neural Networks"]
   }
 };

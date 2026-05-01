@@ -1,30 +1,27 @@
-// components/Education.tsx
 import { portfolioData } from '../data/content';
 
-export default function Education() { // Must be 'export default'
+export default function Education() {
   return (
-    <section id="education" className="py-16 bg-white w-full">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
-          Education
-        </h2>
-        <div className="space-y-8">
+    <section id="education" className="py-24 bg-white w-full">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold text-slate-900 mb-16">Academic Foundation</h2>
+        <div className="space-y-10">
           {portfolioData.education.map((edu) => (
-            <div key={edu.id} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600"></div>
-              <div className="flex flex-col md:flex-row md:items-start justify-between mb-4 pl-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">{edu.degree}</h3>
-                  <p className="text-lg font-medium text-blue-600 mt-1">{edu.institution}</p>
+            <div key={edu.id} className="relative bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 text-left hover:bg-blue-50/30 transition-colors group">
+              <div className="absolute left-0 top-10 bottom-10 w-1.5 bg-blue-600 rounded-r-full scale-y-0 group-hover:scale-y-100 transition-transform origin-center"></div>
+              <div className="flex flex-col md:flex-row justify-between gap-6">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">{edu.degree}</h3>
+                  <p className="text-blue-600 text-lg font-semibold mb-4">{edu.institution}</p>
+                  <p className="text-slate-600 leading-relaxed text-sm max-w-2xl">{edu.description}</p>
                 </div>
-                <div className="mt-2 md:mt-0 text-left md:text-right">
-                  <p className="text-sm font-semibold text-gray-600">{edu.duration}</p>
-                  <p className="text-sm text-gray-500 mt-1">{edu.location}</p>
+                <div className="text-left md:text-right shrink-0">
+                  <span className="inline-block px-4 py-1.5 bg-white rounded-xl text-sm font-bold text-slate-700 shadow-sm border border-slate-200">
+                    {edu.duration}
+                  </span>
+                  <p className="mt-3 text-slate-400 text-sm font-medium">{edu.location}</p>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed pl-4 text-sm">
-                {edu.description}
-              </p>
             </div>
           ))}
         </div>
